@@ -1,0 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(220, 50, 0);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+form{
+  background-color: white;
+  border-radius: 1px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+form .input, form .list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  gap: 10px;
+}
+.list .todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-left: 4px solid #ec5766;
+}
+input{
+  padding: 5px;
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input::placeholder{
+  font-size: 0.8em;
+}
+.delete{
+  color: rgb(220, 50, 0);
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+    body{
+      padding: 5rem 0;
+      align-items: flex-start;
+      height: 100vh;
+      background: radial-gradient(rgb(221, 100, 20), rgb(220, 50, 0), rgb(220, 50, 0));
+    }
+    form{
+      border-radius: 5px;
+      box-shadow: -3px 2px 5px rgba(54, 54, 54, 0.5);
+      width: 90vw;
+    }
+    .todo{
+      font-size: 1.2em;
+      overflow-x: scroll;
+    }
+    input{
+      font-size: 1.5em;
+      margin-top: 5px;
+    }
+}
