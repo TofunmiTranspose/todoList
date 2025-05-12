@@ -49,7 +49,7 @@ input::placeholder{
   margin-left: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 780px) {
     body{
       padding: 5rem 0;
       align-items: flex-start;
